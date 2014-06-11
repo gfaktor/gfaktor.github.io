@@ -1,6 +1,6 @@
 html,body{min-height:100%}
 
-body{font:62.5% 'PT Sans',Arial,sans-serif;background-image:url((data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVQ4T92TMU7DQBBFZ7zbUOEbkBtgQQ7gBsmp4hpB2BuQI8ANwgnYWIjarmJEwwEc4SOEG4SKZjfDrKMgO2yiSHS4W83M+zPzxwh//HBffX8wIhevZtnOvP8IOEuuVYD46NsNEUznZabaMe8OfBBfsQN1AOeDqxQpOK3K7L4N2RT3k9EdELxXL1mx6QKji8tISnFDgIppIQF9WGPT+vW5dhAEjF3bLk9IkfP7hL1dIpA2xk7Rec0Kn0zMrTUTV7jvNhqQkGPOSRHheA1gIhAxwD4cBhC3gJi6jhtAW5FpC55zYjEo6lIvXCxKVE/QasgbG7Nqr+PCNqADA8qRIGS1eNdYzRKFlIpVlZvpkH+r2RmCtsboXzYCsRuIQ/8hUQFIej57yn9s9CVGsQqDI6u4/ebqiNVWX0LXb3q5nf8Nymmadx3ne7YAAAAASUVORK5CYII=);background-color:#fff;background-repeat:no-repeat;background-position:center;background-size: 100% 100%;;color:#000}
+body{font:62.5% 'PT Sans',Arial,sans-serif;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVQ4T92TMU7DQBBFZ7zbUOEbkBtgQQ7gBsmp4hpB2BuQI8ANwgnYWIjarmJEwwEc4SOEG4SKZjfDrKMgO2yiSHS4W83M+zPzxwh//HBffX8wIhevZtnOvP8IOEuuVYD46NsNEUznZabaMe8OfBBfsQN1AOeDqxQpOK3K7L4N2RT3k9EdELxXL1mx6QKji8tISnFDgIppIQF9WGPT+vW5dhAEjF3bLk9IkfP7hL1dIpA2xk7Rec0Kn0zMrTUTV7jvNhqQkGPOSRHheA1gIhAxwD4cBhC3gJi6jhtAW5FpC55zYjEo6lIvXCxKVE/QasgbG7Nqr+PCNqADA8qRIGS1eNdYzRKFlIpVlZvpkH+r2RmCtsboXzYCsRuIQ/8hUQFIej57yn9s9CVGsQqDI6u4/ebqiNVWX0LXb3q5nf8Nymmadx3ne7YAAAAASUVORK5CYII=);background-color:#fff;background-repeat:no-repeat;background-position:center;background-size: 100% 100%;;color:#000}
 p,ul,ol,form{font-size:1.3em;line-height:1.4em}
 
 .logo{width:200px;height:60px;background-image:url(../img/gfaktor.logo.png)}
