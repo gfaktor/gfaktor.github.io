@@ -15,6 +15,7 @@
 .ra{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
 .ib{display:-moz-inline-stack;display:inline-block;vertical-align:top;*display:inline;*zoom:1}
 
+.ts{text-shadow:1px 1px #000}
 .tr{text-align:right}
 .tc{text-align:center}
 
