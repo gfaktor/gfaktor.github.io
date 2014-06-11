@@ -1,3 +1,5 @@
+html,body{min-height:100%}
+
 body{font:62.5% 'PT Sans',Arial,sans-serif;background:#fff url(../img/bg.svg) center no-repeat;background-size:cover;color:#000}
 p,ul,ol,form{font-size:1.3em;line-height:1.4em}
 
