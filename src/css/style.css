@@ -1,6 +1,6 @@
 html,body{min-height:100%}
 
-body{font:62.5% 'PT Sans',Arial,sans-serif;background-image:url(../img/bg.svg);background-color:#fff;background-repeat:no-repeat;background-position:center;background-size: 100% 100%;color:#000}
+body{font:62.5% 'PT Sans',Arial,sans-serif;background-image:url(../img/bg.svg);background-color:#fff;background-repeat:no-repeat;background-size:cover;color:#000}
 p,ul,ol,form{font-size:1.3em;line-height:1.4em}
 
 .logo{width:200px;height:60px;background-image:url(../img/gfaktor.logo.png)}
