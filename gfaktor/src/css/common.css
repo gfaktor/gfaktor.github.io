@@ -2,9 +2,6 @@
 .a{position:absolute}
 .f{position:fixed}
 
-.z10{z-index:10}
-.z5{z-index:5}
-
 .fc:after{content:" ";display:block;height:0;clear:both;visibility:hidden}
 .fl{float:left}
 .fr{float:right}
