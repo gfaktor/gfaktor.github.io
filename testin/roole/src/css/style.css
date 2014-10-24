@@ -3,8 +3,10 @@
 .loading-page{position:absolute;top:0;right:0;bottom:0;left:0;background:#fff url(../img/loading.gif) center center no-repeat}
 
 body{background:#fff}
-.bx{padding:10px;margin:2px;border:1px solid #ccc;background:#f4f4f4;color:#999}
-
+.bx{padding:10px;background:#f4f4f4;color:#999}
 
 .row + .row{margin-top:30px}
-.bx + .bx{margin-top:5px}
+
+[class^='col'] + [class^='col'] {
+	margin-top: 10px;
+}
