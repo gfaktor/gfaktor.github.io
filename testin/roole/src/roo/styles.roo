@@ -1,4 +1,4 @@
-/*fix loading roole*/body{visibility:visible;overflow:inherit}.loading-page{display:none}
+/*fix loading roole*/.loading-page{display:none}.page{display:block}
 
 .row:after{content:" ";display:block;height:0;clear:both;visibility:hidden}
 .row + .row{margin-top:30px}
