@@ -4,3 +4,7 @@
 
 body{background:#fff}
 .bx{padding:10px;margin:2px;border:1px solid #ccc;background:#f4f4f4;color:#999}
+
+
+.row + .row{margin-top:30px}
+.bx + .bx{margin-top:5px}
