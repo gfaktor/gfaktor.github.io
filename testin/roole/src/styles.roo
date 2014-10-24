@@ -44,9 +44,9 @@ body{background:#333}
 
 .visible-{$size}{display:block!important}
 .hidden-{$size}{display:none!important}
-	@for $i in 1..$max {
-  .col-{$i}-{$size} {
-  	float: left;
-    width: $ratio($i, $max);
-  }
+@for $i in 1..$max {
+	.col-{$i}-$size {
+		float: left;
+		width: $ratio($i, $max);
+	}
 }
