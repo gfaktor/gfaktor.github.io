@@ -23,14 +23,6 @@ body{background:#333}
 .visible-md,
 .visible-lg{display:none!important}
 
-$size = xs;
-@for $i in 1..$max {
-  .col-{$i}-xs {
-  	float: left;
-    width: $ratio($i, $max);
-  }
-}
-
 @media (max-width:767px) {
 	$size = xs;
 }
