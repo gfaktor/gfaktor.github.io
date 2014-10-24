@@ -42,8 +42,8 @@ body{background:#333}
 	.cx{width:1170px;margin:0 auto}
 }
 
-.visible-{$size}{display:block!important}
-.hidden-{$size}{display:none!important}
+.visible-$size{display:block!important}
+.hidden-$size{display:none!important}
 @for $i in 1..$max {
 	.col-{$i}-$size {
 		float: left;
