@@ -7,7 +7,7 @@ $ratio = @function $n, $sum {
 };
 $max = 12;
 
-$col = @function $s{
+$clm = @function $s{
 	@for $i in 1..$max {
 		.col-$s-{$i} {
 			float: left;
@@ -22,7 +22,7 @@ $vis = @function $s{
 };
 
 $container = @function $s,$m{
-	.cx{width:{$s};margin:0 $m}
+	.cx{width:$s;margin:0 $m}
 };
 
 
@@ -33,7 +33,7 @@ $container = @function $s,$m{
 .visible-lg{display:none!important}
 
 @mixin $container(auto,15px);
-@mixin $col(xs);
+@mixin $clm(xs);
 
 @media (max-width:767px) {
 	@mixin $vis(xs);
@@ -42,18 +42,18 @@ $container = @function $s,$m{
 @media (min-width:768px) {
 	@mixin $container(750px,auto);
 	@mixin $vis(sm);
-	@mixin $col(sm);
+	@mixin $clm(sm);
 }
 
 @media (min-width:992px) {
 	@mixin $container(970px,auto);
 	@mixin $vis(md);
-	@mixin $col(md);
+	@mixin $clm(md);
 }
 
 @media (min-width:1200px) {
 	@mixin $container(1170px,auto);
 	@mixin $vis(lg);
-	@mixin $col(lg);
+	@mixin $clm(lg);
 }
 
