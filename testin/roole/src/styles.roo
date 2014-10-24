@@ -9,7 +9,7 @@ $max = 12;
 
 $clm = @function $s{
 	@for $i in 1..$max {
-		.col-$s-{$i} {
+		.col-{$s}-{$i} {
 			float: left;
 			width: $ratio($i, $max);
 		}
@@ -17,12 +17,12 @@ $clm = @function $s{
 };
 
 $vis = @function $s{
-	.visible-$s{display:block!important}
-	.hidden-$s{display:none!important}
+	.visible-{$s}{display:block!important}
+	.hidden-{$s}{display:none!important}
 };
 
 $container = @function $s,$m{
-	.cx{width:$s;margin:0 $m}
+	.cx{width:{$s};margin:0 {$m}}
 };
 
 
