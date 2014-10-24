@@ -1,4 +1,5 @@
-body{visibility:hidden;overflow:hidden}
+/*fix loading roole*/body{visibility:visible;overflow:inherit}
+
 .row:after{content:" ";display:block;height:0;clear:both;visibility:hidden}
 .row + .row{margin-top:30px}
 
