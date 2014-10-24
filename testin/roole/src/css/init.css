@@ -1,4 +1,5 @@
 /*fix loading roole*/.loading-page{display:block}.page{display:none}
 
-body{background:#333}
-.bx{padding:10px;margin:2px;border:1px solid #ccc}
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,400italic');
+@import url(reset.css);
+@import url(style.css);
