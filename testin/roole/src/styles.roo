@@ -1,0 +1,86 @@
+$ratio = @function $n, $sum {
+  @return (100 / $sum * $n)%;
+};
+$max = 12;
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#333}
+.cx{width:auto;margin:0 15px}
+.row:after{content:" ";display:block;height:0;clear:both;visibility:hidden}
+
+[class^='col'] {
+  background:red;
+  border:1px solid #ccc;
+  padding:20px
+}
+
+
+.row + .row{margin-top:30px}
+
+/*BOOTSTRAP v3.2.0 GRID*/
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg{display:none!important}
+
+@for $i in 1..$max {
+  .col-{$i}-xs {
+  	float: left;
+    width: $ratio($i, $max);
+  }
+}
+
+@media (max-width:767px) {
+
+ .visible-xs{display:block!important}
+ .hidden-xs{display:none!important}
+ 
+}
+
+@media (min-width:768px) {
+
+ .visible-sm{display:block!important}
+ .hidden-sm{display:none!important}
+
+ .cx{width:750px;margin:0 auto}
+
+	@for $i in 1..$max {
+	  .col-{$i}-sm {
+	  	float: left;
+	    width: $ratio($i, $max);
+	  }
+	}
+
+}
+
+@media (min-width:992px) {
+
+ .visible-md{display:block!important}
+ .hidden-md{display:none!important} 
+ 
+ .cx{width:970px;margin:0 auto}
+
+	@for $i in 1..$max {
+	  .col-{$i}-md {
+	  	float: left;
+	    width: $ratio($i, $max);
+	  }
+	}
+
+}
+
+@media (min-width:1200px) {
+
+ .visible-lg{display:block!important}
+ .hidden-lg{display:none!important}
+ 
+ .cx{width:1170px;margin:0 auto}
+
+	@for $i in 1..$max {
+	  .col-{$i}-lg {
+	  	float: left;
+	    width: $ratio($i, $max);
+	  }
+	}
+
+}
