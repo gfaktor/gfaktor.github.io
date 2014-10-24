@@ -16,7 +16,7 @@ body{background:#333}
 
 $col = @function $s{
 	@for $i in 1..$max {
-		.col-{$i}-$s {
+		.col-$s-{$i} {
 			float: left;
 			width: $ratio($i, $max);
 		}
