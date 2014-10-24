@@ -23,6 +23,7 @@ body{background:#333}
 .visible-md,
 .visible-lg{display:none!important}
 
+$size = xs;
 @for $i in 1..$max {
   .col-{$i}-xs {
   	float: left;
@@ -31,56 +32,29 @@ body{background:#333}
 }
 
 @media (max-width:767px) {
-
- .visible-xs{display:block!important}
- .hidden-xs{display:none!important}
- 
+	$size = xs;
 }
 
 @media (min-width:768px) {
-
- .visible-sm{display:block!important}
- .hidden-sm{display:none!important}
-
- .cx{width:750px;margin:0 auto}
-
-	@for $i in 1..$max {
-	  .col-{$i}-sm {
-	  	float: left;
-	    width: $ratio($i, $max);
-	  }
-	}
-
+	$size = sm;
+	.cx{width:750px;margin:0 auto}
 }
 
 @media (min-width:992px) {
-
- .visible-md{display:block!important}
- .hidden-md{display:none!important} 
- 
- .cx{width:970px;margin:0 auto}
-
-	@for $i in 1..$max {
-	  .col-{$i}-md {
-	  	float: left;
-	    width: $ratio($i, $max);
-	  }
-	}
-
+	$size = md;
+	.cx{width:970px;margin:0 auto}
 }
 
 @media (min-width:1200px) {
+	$size = lg;
+	.cx{width:1170px;margin:0 auto}
+}
 
- .visible-lg{display:block!important}
- .hidden-lg{display:none!important}
- 
- .cx{width:1170px;margin:0 auto}
-
+.visible-{$size}{display:block!important}
+.hidden-{$size}{display:none!important}
 	@for $i in 1..$max {
-	  .col-{$i}-lg {
-	  	float: left;
-	    width: $ratio($i, $max);
-	  }
-	}
-
+  .col-{$i}-{$size} {
+  	float: left;
+    width: $ratio($i, $max);
+  }
 }
