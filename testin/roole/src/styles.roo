@@ -14,6 +14,19 @@ body{background:#333}
   padding:20px
 }
 
+$col = @function $s{
+	@for $i in 1..$max {
+		.col-{$i}-$s {
+			float: left;
+			width: $ratio($i, $max);
+		}
+	}
+}
+$vis = @function $s{
+	.visible-$s{display:block!important}
+	.hidden-$s{display:none!important}
+}
+
 
 .row + .row{margin-top:30px}
 
@@ -23,30 +36,27 @@ body{background:#333}
 .visible-md,
 .visible-lg{display:none!important}
 
+@mixin $col(xs);
+
 @media (max-width:767px) {
-	$size = xs;
+	@mixin $vis(xs);
 }
 
 @media (min-width:768px) {
-	$size = sm;
 	.cx{width:750px;margin:0 auto}
+	@mixin $vis(sm);
+	@mixin $col(sm);
 }
 
 @media (min-width:992px) {
-	$size = md;
 	.cx{width:970px;margin:0 auto}
+	@mixin $vis(md);
+	@mixin $col(md);
 }
 
 @media (min-width:1200px) {
-	$size = lg;
 	.cx{width:1170px;margin:0 auto}
+	@mixin $vis(lg);
+	@mixin $col(lg);
 }
 
-.visible-$size{display:block!important}
-.hidden-$size{display:none!important}
-@for $i in 1..$max {
-	.col-{$i}-$size {
-		float: left;
-		width: $ratio($i, $max);
-	}
-}
