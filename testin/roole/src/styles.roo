@@ -21,11 +21,12 @@ $col = @function $s{
 			width: $ratio($i, $max);
 		}
 	}
-}
+};
+
 $vis = @function $s{
 	.visible-$s{display:block!important}
 	.hidden-$s{display:none!important}
-}
+};
 
 
 .row + .row{margin-top:30px}
