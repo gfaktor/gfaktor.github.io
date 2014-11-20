@@ -5,7 +5,7 @@ function load_regioni() {
     dataType: "json",
     success: function (data) {
       $('#regione').empty().append('<option value="">Seleziona Regione</option>').removeAttr('disabled');
-      $.each(data.nome, function (index, item) {
+      $.each(data.regioni, function (index, item) {
         var n = item.nome;
         $('#regione').append('<option value="' + n +'">' + n + '</option>');
       });
