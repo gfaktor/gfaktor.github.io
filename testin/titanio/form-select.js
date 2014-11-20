@@ -19,11 +19,11 @@ function load_province(regione) {
     url: 'italia.json',
     dataType: "json",
     success: function (data) {
-      $('#comune' + cat).empty().append('<option value="">Seleziona Provincia</option>').removeAttr('disabled');
-      $.each(data.comuni, function (index, item) {
-        var label = item.DESCRIZIONE;
-        var id = item.CODICE;
-        $('#comune' + cat).append('<option value="' + id + '">' + label + '</option>');
+      $('#provincia').empty().append('<option value="">Seleziona Provincia</option>').removeAttr('disabled');
+      $.each(data.regioni, function (index, item) {
+        var capoluoghi = item.capoluoghi;
+        var codice = item.province;
+        $('#provincia').append('<option value="' + codice + '">' + capoluoghi + '</option>');
       });
     }
   });
