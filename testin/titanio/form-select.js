@@ -29,9 +29,10 @@ function load_selects() {
                 
                 var regione_selezionata = $('option:selected', this);
                 console.log(regione_selezionata);
+                
                 $('#provincia').empty().append('<option value="0">Seleziona Provincia</option>').removeAttr('disabled');
                 
-                $.each(italia.+regione_selezionata, function (i, val) {
+                $.each(italia.regione_selezionata, function (i, val) {
                     var sigla = val.sigla;
                     var nome = val.nome; 
                     $('#provincia').append('<option value="' + sigla +'">' + nome + '</option>');
