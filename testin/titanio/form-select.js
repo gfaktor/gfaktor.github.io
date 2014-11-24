@@ -12,7 +12,9 @@ function load_json(){
 }
 
 function load_selects() {
-    if(italia!==0){      
+    if(italia!==0){
+        $.parseJSON(italia);
+        
         $('#regione').empty().append('<option value="0">Seleziona Regione</option>').removeAttr('disabled');
 
         $.each(italia, function (key, val) {
