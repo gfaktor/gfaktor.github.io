@@ -8,7 +8,8 @@ function load_json(){
         dataType: "json",
         success: function(data){
             loaded = true;
-            italia = data.regioni;
+            regioni = data.regioni;
+            province = data.regioni.province;
         }
     });
 }
@@ -18,9 +19,10 @@ function load_selects() {
         
         $('#regione').empty().append('<option value="0">Seleziona Regione</option>').removeAttr('disabled');
 
-        $.each(italia, function (i, val) {
+        $.each(regioni, function (i, val) {
             var regione = val.nome;
-            $('#regione').append('<option value="' + regione +'">' + regione + '</option>');
+            var id = i+1;
+            $('#regione').append('<option value="'+ i +'">' + regione + '</option>');
         });
 
         $('#regione').change(function(){
@@ -28,11 +30,10 @@ function load_selects() {
             if($(this).val()!='0'){
                 
                 var regione_selezionata = $('option:selected', this).val();
-                console.log(regione_selezionata);
 
                 $('#provincia').empty().append('<option value="0">Seleziona Provincia</option>').removeAttr('disabled');
                 
-                $.each(italia.regione_selezionata, function (i, val) {
+                $.each(province, function (i, val){
                     var sigla = val.sigla;
                     var nome = val.nome; 
                     $('#provincia').append('<option value="' + sigla +'">' + nome + '</option>');
