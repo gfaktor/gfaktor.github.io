@@ -27,7 +27,7 @@ function load_selects() {
             
             if($(this).val()!='0'){
                 
-                var regione_selezionata = 'Liguria';
+                var regione_selezionata = $('option:selected', this);
                 
                 $('#provincia').empty().append('<option value="0">Seleziona Provincia</option>').removeAttr('disabled');
                 
