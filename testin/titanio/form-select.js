@@ -12,22 +12,20 @@ function load_json(){
 }
 
 function load_selects() {
-      console.log(italia);
-    /*  
-    $('#regione').empty().append('<option value="0">Seleziona Regione</option>').removeAttr('disabled');
-        
-    $.each(italia, function (key, val) {
-        var regione = val.nome;
-        $('#regione').append('<option value="' + regione +'">' + regione + '</option>');
-    });
+    if(italia!===0){      
+        $('#regione').empty().append('<option value="0">Seleziona Regione</option>').removeAttr('disabled');
 
-    $('#regione').change(function(){
-        if($(this).val()!='0')
-            $('#provincia').removeAttr('disabled');
-    });
-    */  
+        $.each(italia, function (key, val) {
+            var regione = val.nome;
+            $('#regione').append('<option value="' + regione +'">' + regione + '</option>');
+        });
+
+        $('#regione').change(function(){
+            if($(this).val()!='0')
+                $('#provincia').removeAttr('disabled');
+        });  
+    }
 }
-
 
 
 //READY
