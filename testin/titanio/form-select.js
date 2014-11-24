@@ -1,15 +1,15 @@
 var italia;
 
 function load_json(){
-  $.ajax({
-    type: "get",
-    url: 'italia.json',
-    dataType: "json",
-    success: function (data){
-        var italia = data.regioni;
-    }
+    $.ajax({
+        type: "get",
+        url: 'italia.json',
+        dataType: "json",
+        success: function (data){
+            var italia = data.regioni;
+        }
+    });
 }
-
 
 function load_selects() {
       console.log(italia);
