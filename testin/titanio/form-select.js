@@ -1,4 +1,5 @@
-var italia = [];
+var loaded;
+var italia = {};
 
 function load_json(){
     $.ajax({
@@ -6,14 +7,14 @@ function load_json(){
         url: 'italia.json',
         dataType: "json",
         success: function(data){
-            italia.push(data.regioni);
+            loaded = true;
+            italia = data.regioni;
         }
     });
 }
 
 function load_selects() {
-    if(italia!==0){
-        $.parseJSON(italia);
+    if(loaded){
         
         $('#regione').empty().append('<option value="0">Seleziona Regione</option>').removeAttr('disabled');
 
