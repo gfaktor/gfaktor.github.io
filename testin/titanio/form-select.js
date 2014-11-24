@@ -18,18 +18,34 @@ function load_selects() {
         
         $('#regione').empty().append('<option value="0">Seleziona Regione</option>').removeAttr('disabled');
 
-        $.each(italia, function (key, val) {
+        $.each(italia, function (i, val) {
             var regione = val.nome;
             $('#regione').append('<option value="' + regione +'">' + regione + '</option>');
         });
 
         $('#regione').change(function(){
-            if($(this).val()!='0')
-                $('#provincia').removeAttr('disabled');
+            
+            if($(this).val()!='0'){
+                
+                var regione_selezionata = 'Liguria';
+                
+                $('#provincia').empty().append('<option value="0">Seleziona Provincia</option>').removeAttr('disabled');
+                
+                $.each(regione_selezionata, function (i, val) {
+                    var province = val.province;
+                    var capoluoghi = val.capoluoghi; 
+                    $('#provincia').append('<option value="' + province +'">' + capoluoghi + '</option>');
+                });
+            
+            }else{
+                       
+               $('#provincia').empty().append('<option value="">...</option>').attr('disabled','disabled'); 
+            
+            }
+
         });  
     }
 }
-
 
 //READY
 $(function () {
