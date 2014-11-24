@@ -1,12 +1,12 @@
-var italia;
+var italia = [];
 
 function load_json(){
     $.ajax({
         type: "get",
         url: 'italia.json',
         dataType: "json",
-        success: function (data){
-            var italia = data.regioni;
+        success: function(data){
+            italia.push(data.regioni);
         }
     });
 }
