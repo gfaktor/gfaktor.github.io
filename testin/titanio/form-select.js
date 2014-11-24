@@ -1,5 +1,5 @@
 var loaded;
-var italia = {};
+var regioni = {};
 
 function load_json(){
     $.ajax({
@@ -8,7 +8,7 @@ function load_json(){
         dataType: "json",
         success: function(data){
             loaded = true;
-            italia = data.regioni;
+            regioni = data.regioni;
         }
     });
 }
@@ -18,7 +18,7 @@ function load_selects() {
         
         $('#regione').empty().append('<option value="null">Seleziona Regione</option>').removeAttr('disabled');
 
-        $.each(italia, function (i, val) {
+        $.each(regioni, function (i, val) {
             var id = i;
             var regione = val.nome;
             $('#regione').append('<option value="'+ i +'">' + regione + '</option>');
@@ -32,9 +32,9 @@ function load_selects() {
                 
                 var id = $('option:selected', this).val();
                 
-                $.each(italia[id].province, function (i, val){
+                $.each(regioni[id].province, function (i, val){
                     var sigla = val.sigla;
-                    var nome = val.nome; 
+                    var nome = val.nome;
                     $('#provincia').append('<option value="' + sigla +'">' + nome + '</option>');
                 });
             

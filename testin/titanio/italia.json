@@ -6,9 +6,21 @@
 			"province":
 			[
                 {
-				    "nome": ["Chieti", "L'Aquila", "Pescara", "Teramo"],
-				    "sigla":["CH","AQ","PE","TE"]
-                }
+				    "nome": "Chieti",
+				    "sigla": "CH"
+                },
+                {
+				    "nome": "L'Aquila",
+				    "sigla": "AQ"
+                },
+                {
+				    "nome": "Pescara",
+				    "sigla": "PE"
+                },
+                {
+				    "nome": "Teramo",
+				    "sigla": "TE"
+                }                                
             ]
 		},
 		{
@@ -16,9 +28,13 @@
 			"province":
 			[
                 {
-				    "nome": ["Matera", "Potenza"],
-				    "sigla": ["MT","PZ"]
-                }
+				    "nome": "Matera",
+				    "sigla": "MT"
+                },
+                {
+				    "nome": "Potenza",
+				    "sigla": "PZ"
+                }                
             ]
 		},
 		{
@@ -26,9 +42,25 @@
 			"province":
 			[
                 {
-                    "nome": ["Catanzaro", "Cosenza", "Crotone", "Reggio Calabria", "Vibo Valentia"],
-				    "sigla": ["CZ","CS","KR","RC","VV"]
-                }
+                    "nome": "Catanzaro",
+				    "sigla": "CZ"
+                },
+                {
+                    "nome": "Cosenza",
+				    "sigla": "CS"
+                },                
+                {
+                    "nome": "Crotone",
+				    "sigla": "KR"
+                },
+                {
+                    "nome": "Reggio Calabria",
+				    "sigla": "RC"
+                },
+                {
+                    "nome": "Vibo Valentia",
+				    "sigla": "VV"
+                }                                
             ]
 		},
 		{
@@ -36,9 +68,25 @@
 			"province":
 			[
                 {
-				    "nome": ["Avellino", "Benevento", "Caserta", "Napoli", "Salerno"],
-				    "sigla": ["AV","BN","CE","NA","SA"]
-                }
+				    "nome": "Avellino",
+				    "sigla": "AV"
+                },
+                {
+				    "nome": "Benevento",
+				    "sigla": "BN"
+                },                
+                {
+				    "nome": "Caserta",
+				    "sigla": "CE"
+                },
+                {
+				    "nome": "Napoli",
+				    "sigla": "NA"
+                },
+                {
+				    "nome": "Salerno",
+				    "sigla": "SA"
+                }                                
             ]
 		},
 		{
@@ -46,9 +94,41 @@
 			"province":
 			[
                 {
-				    "nome": ["Bologna", "Ferrara", "Forlì-Cesena", "Modena", "Parma", "Piacenza", "Ravenna", "Reggio Emilia", "Rimini"],
-				    "sigla": ["BO","FE","FC","MO","PR","PC","RA","RE","RN"]
-                }
+				    "nome": "Bologna",
+				    "sigla": "BO"
+                },
+                {
+				    "nome": "Ferrara",
+				    "sigla": "FE"
+                },
+                {
+				    "nome": "Forlì-Cesena",,
+				    "sigla": "FC"
+                },
+                {
+				    "nome": "Modena",
+				    "sigla": "MO"
+                },
+                {
+				    "nome": "Parma",
+				    "sigla": "PR"
+                },
+                {
+				    "nome": "Piacenza",
+				    "sigla": "PC"
+                },
+                {
+				    "nome": "Ravenna",
+				    "sigla": "RA"
+                },
+                {
+				    "nome": "Reggio Emilia",
+				    "sigla": "RE"
+                },
+                {
+				    "nome": "Rimini",
+				    "sigla": "RN"
+                }                
             ]
 		},
 		{
@@ -56,9 +136,21 @@
 			"province":
 			[
                 {
-				    "nome": ["Gorizia", "Pordenone", "Trieste", "Udine"],
-				    "sigla": ["GO","PN","TS","UD"]
-                }
+				    "nome": "Gorizia",
+				    "sigla": "GO"
+                },
+                {
+				    "nome": "Pordenone",
+				    "sigla": "PN"
+                },
+                {
+				    "nome": "Trieste",
+				    "sigla": "TS"
+                },
+                {
+				    "nome": "Udine",
+				    "sigla": "UD"
+                }                
 			]
 		},
 		{
@@ -66,9 +158,25 @@
 			"province":
 			[
                 {
-                    "nome": ["Frosinone", "Latina", "Rieti", "Roma", "Viterbo"],
-				    "sigla": ["FR","LT","RI","RM","VT"]
-                }
+                    "nome": "Frosinone",
+				    "sigla": "FR"
+                },
+                {
+                    "nome": "Latina",
+				    "sigla": "LT"
+                },
+                {
+                    "nome": "Rieti",
+				    "sigla": "RI"
+                },
+                {
+                    "nome": "Roma",
+				    "sigla": "RM"
+                },
+                {
+                    "nome": "Viterbo",
+				    "sigla": "VT"
+                }                
 			]
 		},
 		{
@@ -76,8 +184,20 @@
 			"province":
 			[
                 {
-				    "nome": ["Genova", "Imperia", "La Spezia", "Savona"],
-				    "sigla": ["GE","IM","SP","SV"]
+				    "nome": "Genova",
+				    "sigla": "GE"
+                },
+                {
+				    "nome": "Imperia",
+				    "sigla": "IM"
+                },
+                {
+				    "nome": "La Spezia",
+				    "sigla": "SP"
+                },
+                {
+				    "nome": "Savona",
+				    "sigla": "SV"
                 }
 			]
 		},	
@@ -85,10 +205,54 @@
 			"nome": "Lombardia",
 			"province":
 			[
-				{
-					"nome": ["Bergamo", "Brescia", "Como", "Cremona", "Lecco", "Lodi", "Mantova", "Milano", "Monza e Brianza", "Pavia", "Sondrio", "Varese"],
-					"sigla": ["BG","BS","CO","CR","LC","LO","MN","MI","MB","PV","SO","VA"]
-				}
+                {
+				    "nome": "Bergamo",
+				    "sigla": "BG"
+                },
+                {
+				    "nome": "Brescia",
+				    "sigla": "BS"
+                },
+                {
+				    "nome": "Como",
+				    "sigla": "CO"
+                },
+                {
+				    "nome": "Cremona",
+				    "sigla": "CR"
+                },
+                {
+				    "nome": "Lecco",
+				    "sigla": "LC"
+                },
+                {
+				    "nome": "Lodi",
+				    "sigla": "LD"
+                },
+                {
+				    "nome": "Mantova",
+				    "sigla": "MN"
+                },
+                {
+				    "nome": "Milano",
+				    "sigla": "MI"
+                },
+                {
+				    "nome": "Monza e Brianza",
+				    "sigla": "MB"
+                },
+                {
+				    "nome": "Pavia",
+				    "sigla": "PV"
+                },
+                {
+				    "nome": "Sondrio",
+				    "sigla": "SO"
+                },
+                {
+				    "nome": "Varese",
+				    "sigla": "VA"
+                }
 			]
 		},
 		{
@@ -96,8 +260,24 @@
 			"province":
 			[
                 {
-				    "nome": ["Ancona", "Ascoli Piceno", "Fermo", "Macerata", "Pesaro e Urbino"],
-				    "sigla": ["AN","AP","FM","MC","PU"]
+				    "nome": "Ancona",
+				    "sigla": "AN"
+                },
+                {
+				    "nome": "Ascoli Piceno",
+				    "sigla": "AP"
+                },
+                {
+				    "nome": "Fermo",
+				    "sigla": "FM"
+                },
+                {
+				    "nome": "Macerata",
+                    "sigla": "MC"
+                },
+                {
+				    "nome": "Pesaro e Urbino",
+				    "sigla": "PU"
                 }
 			]
 		},
@@ -106,8 +286,12 @@
 			"province":
 			[
                 {
-				    "nome": ["Campobasso", "Isernia"],
-				    "sigla": ["CB","IS"]
+				    "nome": "Campobasso",
+				    "sigla": "CB"
+                },
+                {
+				    "nome": "Isernia",
+				    "sigla": "IS"
                 }
 			]
 		},
@@ -116,8 +300,36 @@
 			"province":
 			[
                 {
-				    "nome": ["Alessandria", "Asti", "Biella", "Cuneo", "Novara", "Torino", "Verbano Cusio Ossola", "Vercelli"],
-				    "sigla": ["AL","AT","BI","CN","NO","TO","VB","VC"]
+				    "nome": "Alessandria",
+				    "sigla": "AL"
+                },
+                {
+				    "nome": "Asti",
+				    "sigla": "AT"
+                },
+                {
+				    "nome": "Biella",
+				    "sigla": "BI"
+                },
+                {
+				    "nome": "Cuneo",
+				    "sigla": "CN"
+                },
+                {
+				    "nome": "Novara",
+				    "sigla": "NO"
+                },
+                {
+				    "nome": "Torino",
+				    "sigla": "TO"
+                },
+                {
+				    "nome": "Verbano Cusio Ossola",
+				    "sigla": "VB"
+                },
+                {
+				    "nome": "Vercelli",
+				    "sigla": "VC"
                 }
 			]
 		},
@@ -126,8 +338,28 @@
 			"province":
 			[
                 {
-				    "nome": ["Bari", "Barletta-Andria-Trani", "Brindisi", "Lecce", "Foggia", "Taranto"],
-				    "sigla": ["BA","BT","BR","FG","LE","TA"]
+				    "nome": "Bari",
+				    "sigla": "BA"
+                },
+                {
+				    "nome": "Barletta-Andria-Trani",
+				    "sigla": "BT"
+                },
+                {
+				    "nome": "Brindisi",
+				    "sigla": "BR"
+                },
+                {
+				    "nome": "Lecce",
+				    "sigla": "LE"
+                },
+                {
+				    "nome": "Foggia",
+				    "sigla": "FG"
+                },
+                {
+				    "nome": "Taranto",
+				    "sigla": "TA"
                 }
 			]
 		},
@@ -136,8 +368,36 @@
 			"province":
 			[
                 {
-				    "nome": ["Cagliari", "Carbonia-Iglesias", "Medio Campidano", "Nuoro", "Ogliastra", "Olbia-Tempio", "Oristano", "Sassari"],
-				    "sigla": ["CA","CI","VS","NU","OG","OT","OR","SS"]
+				    "nome": "Cagliari",
+				    "sigla": "CA"
+                },
+                {
+				    "nome": "Carbonia-Iglesias",
+				    "sigla": "CI"
+                },
+                {
+				    "nome": "Medio Campidano",
+				    "sigla": "VS"
+                },
+                {
+				    "nome": "Nuoro",
+				    "sigla": "NU"
+                },
+                {
+				    "nome": "Ogliastra",
+				    "sigla": "OG"
+                },
+                {
+				    "nome": "Olbia-Tempio",
+				    "sigla": "OT"
+                },
+                {
+				    "nome": "Oristano",
+				    "sigla": "OR"
+                },
+                {
+				    "nome": "Sassari",
+				    "sigla": "SS"
                 }
 			]
 		},
@@ -146,8 +406,40 @@
 			"province":
 			[
                 {
-				    "nome": ["Agrigento", "Caltanissetta", "Catania", "Enna", "Messina", "Palermo", "Ragusa", "Siracusa", "Trapani"],
-				    "sigla": ["AG","CL","CT","EN","ME","PA","RG","SR","TP"]
+				    "nome": "Agrigento",
+				    "sigla": "AG"
+                },
+                {
+				    "nome": "Caltanissetta",
+				    "sigla": "CL"
+                },
+                {
+				    "nome": "Catania",
+				    "sigla": "CT"
+                },
+                {
+				    "nome": "Enna",
+				    "sigla": "EN"
+                },
+                {
+				    "nome": "Messina",
+				    "sigla": "ME"
+                },
+                {
+				    "nome": "Palermo",
+				    "sigla": "PA"
+                },
+                {
+				    "nome": "Ragusa",
+				    "sigla": "RG"
+                },
+                {
+				    "nome": "Siracusa",
+				    "sigla": "SR"
+                },
+                {
+				    "nome": "Trapani",
+				    "sigla": "TP"
                 }
 			]
 		},
@@ -156,8 +448,44 @@
 			"province":
 			[
                 {
-				    "nome": ["Arezzo", "Firenze", "Grosseto", "Livorno", "Lucca", "Massa e Carrara", "Pisa", "Pistoia", "Prato", "Siena"],
-				    "sigla": ["AR","FI","GR","LI","LU","MS"]
+				    "nome": "Arezzo",
+				    "sigla": "AR"
+                },
+                {
+				    "nome": "Firenze",
+				    "sigla": "FI"
+                },
+                {
+				    "nome": "Grosseto",
+				    "sigla": "GR"
+                },
+                {
+				    "nome": "Livorno",
+				    "sigla": "LI"
+                },
+                {
+				    "nome": "Lucca",
+				    "sigla": "LU"
+                },
+                {
+				    "nome": "Massa e Carrara",
+				    "sigla": "MS"
+                },
+                {
+				    "nome": "Pisa",
+				    "sigla": "PI"
+                },
+                {
+				    "nome": "Pistoia",
+				    "sigla": "PT"
+                },
+                {
+				    "nome": "Prato",
+				    "sigla": "PO"
+                },
+                {
+				    "nome": "Siena",
+				    "sigla": "SI"
                 }
 			]
 		},
@@ -166,19 +494,27 @@
 			"province":
 			[
                 {
-				    "nome": ["Bolzano", "Trento"],
-				    "sigla": ["BZ","TN"]
+				    "nome": "Bolzano",
+				    "sigla": "BZ"
+                },
+                {
+				    "nome": "Trento",
+				    "sigla": "TN"
                 }
-			]
+            ]
 		},
 		{
 			"nome": "Umbria",
 			"province":
 			[
                 {
-				    "nome": ["Perugia", "Terni"],
-				    "sigla": ["PG","TR"]
-                }
+				    "nome": "Perugia",
+				    "sigla": "PG"
+                },
+                {
+				    "nome": "Terni",
+				    "sigla": "TR"
+                }                
 			]
 		},
 		{
@@ -186,8 +522,8 @@
 			"province":
 			[
                 {
-				    "nome": ["Aosta"],
-				    "sigla": ["AO"]
+				    "nome": "Aosta",
+				    "sigla": "AO"
                 }
 			]
 		},
@@ -196,9 +532,33 @@
 			"province":
 			[
                 {
-				    "nome": ["Belluno", "Padova", "Rovigo", "Treviso", "Venezia", "Verona", "Vicenza"],
-				    "sigla": ["BL","PD","RO","TV","VE","VR","VI"]
-                }
+				    "nome": "Belluno",
+				    "sigla": "BL"
+                },
+                {
+				    "nome": "Padova",
+				    "sigla": "PD"
+                },
+                {
+				    "nome": "Rovigo",
+				    "sigla": "RO"
+                }, 
+                {
+				    "nome": "Treviso",
+				    "sigla": "TV"
+                }, 
+                {
+				    "nome": "Venezia",
+				    "sigla": "VE"
+                }, 
+                {
+				    "nome": "Verona",
+				    "sigla": "VR"
+                },
+                {
+				    "nome": "Vicenza",
+				    "sigla": "VI"
+                }                
 			]
 		}
 	]
