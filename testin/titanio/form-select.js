@@ -21,7 +21,7 @@ function load_selects() {
 
         $.each(regioni, function (i, val) {
             var regione = val.nome;
-            var id = i+1;
+            var id = i+;
             $('#regione').append('<option value="'+ i +'">' + regione + '</option>');
         });
 
