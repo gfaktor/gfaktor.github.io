@@ -8,8 +8,7 @@ function load_json(){
         dataType: "json",
         success: function(data){
             loaded = true;
-            regioni = data.regioni;
-            province = data.regioni.province;
+            italia = data.regioni;
         }
     });
 }
@@ -17,23 +16,23 @@ function load_json(){
 function load_selects() {
     if(loaded){
         
-        $('#regione').empty().append('<option value="0">Seleziona Regione</option>').removeAttr('disabled');
+        $('#regione').empty().append('<option value="null">Seleziona Regione</option>').removeAttr('disabled');
 
-        $.each(regioni, function (i, val) {
+        $.each(italia, function (i, val) {
+            var id = i;
             var regione = val.nome;
-            var id = (1+i);
             $('#regione').append('<option value="'+ i +'">' + regione + '</option>');
         });
 
         $('#regione').change(function(){
             
-            if($(this).val()!='0'){
+            if($(this).val()!='null'){
                 
-                var regione_selezionata = $('option:selected', this).val();
-
-                $('#provincia').empty().append('<option value="0">Seleziona Provincia</option>').removeAttr('disabled');
+                $('#provincia').empty().append('<option value="null">Seleziona Provincia</option>').removeAttr('disabled');
                 
-                $.each(province, function (i, val){
+                var id = $('option:selected', this).val();
+                
+                $.each(italia[id].province, function (i, val){
                     var sigla = val.sigla;
                     var nome = val.nome; 
                     $('#provincia').append('<option value="' + sigla +'">' + nome + '</option>');
@@ -41,7 +40,7 @@ function load_selects() {
             
             }else{
                        
-               $('#provincia').empty().append('<option value="">...</option>').attr('disabled','disabled'); 
+               $('#provincia').empty().append('<option value="null">...</option>').attr('disabled','disabled'); 
             
             }
 
@@ -58,7 +57,7 @@ $(function () {
         if($(this).val()=='locali')
             load_selects();
         else if ($(this).val()=='nazionali')
-            $('#regione, #provincia').empty().append('<option value="">...</option>').attr('disabled','disabled');
+            $('#regione, #provincia').empty().append('<option value="null">...</option>').attr('disabled','disabled');
     });
 
     $('#messaggio').keyup(function(){
