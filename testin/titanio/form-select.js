@@ -7,7 +7,7 @@ function load_json(){
         url: 'italia.json',
         dataType: "json",
         success: function(data){
-            loaded = true;
+            loaded = false;
             italia = data.regioni;
         }
     });
