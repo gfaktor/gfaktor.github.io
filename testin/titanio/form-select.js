@@ -7,7 +7,7 @@ function load_json(){
         url: 'italia.json',
         dataType: "json",
         success: function(data){
-            loaded = false;
+            loaded = true;
             italia = data.regioni;
         }
     });
@@ -31,7 +31,7 @@ function load_selects() {
                 
                 $('#provincia').empty().append('<option value="0">Seleziona Provincia</option>').removeAttr('disabled');
                 
-                $.each(regione_selezionata, function (i, val) {
+                $.each(italia.regione_selezionata, function (i, val) {
                     var province = val.province;
                     var capoluoghi = val.capoluoghi; 
                     $('#provincia').append('<option value="' + province +'">' + capoluoghi + '</option>');
