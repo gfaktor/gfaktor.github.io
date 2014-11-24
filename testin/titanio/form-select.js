@@ -31,10 +31,10 @@ function load_selects() {
                 
                 $('#provincia').empty().append('<option value="0">Seleziona Provincia</option>').removeAttr('disabled');
                 
-                $.each(italia.regione_selezionata, function (i, val) {
-                    var province = val.province;
-                    var capoluoghi = val.capoluoghi; 
-                    $('#provincia').append('<option value="' + province +'">' + capoluoghi + '</option>');
+                $.each(italia, function (i, val) {
+                    var sigla = val.regione_selezionata.sigla;
+                    var nome = val.regione_selezionata.nome; 
+                    $('#provincia').append('<option value="' + sigla +'">' + nome + '</option>');
                 });
             
             }else{
