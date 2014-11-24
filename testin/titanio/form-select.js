@@ -7,8 +7,8 @@ function load_selects() {
 
         $('#regione').empty().append('<option value="0">Seleziona Regione</option>').removeAttr('disabled');
         
-        $.each(data.regioni, function (index, item) {
-            var n = item.nome;
+        $.each(data.regioni, function (key, val) {
+            var n = val.nome;
             $('#regione').append('<option value="' + n +'">' + n + '</option>');
         });
         
@@ -24,6 +24,7 @@ function load_selects() {
 
 //READY
 $(function () {
+  $.ajaxSetup({ cache: true });    
     
   $('input[name=localizzazione]:radio').change(function(){
       if($(this).val()=='locali'){
