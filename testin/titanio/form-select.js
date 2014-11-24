@@ -27,9 +27,9 @@ function load_selects() {
             
             if($(this).val()!='0'){
                 
-                var regione_selezionata = $('option:selected', this);
+                var regione_selezionata = $('option:selected', this).val();
                 console.log(regione_selezionata);
-                
+
                 $('#provincia').empty().append('<option value="0">Seleziona Provincia</option>').removeAttr('disabled');
                 
                 $.each(italia.regione_selezionata, function (i, val) {
