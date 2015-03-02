@@ -1,8 +1,0 @@
-body{font:62.5% 'PT Sans',Arial,sans-serif;background-color:#fff;color:#000}
-p,ul,ol,form{font-size:1.3em;line-height:1.4em}
-
-.bg{min-width:100%;min-height:100%;top:0;left:0;z-index:-2;background-image:url(../img/bg.svg);background-size:cover;background-position:center}
-
-.logo{width:200px;height:60px;background-image:url(../img/gfaktor.logo.png)}
-
-footer{color:#fff;width:100%;bottom:0}
