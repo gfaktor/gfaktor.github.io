@@ -13,4 +13,4 @@ p,ul,ol,form{font-size:1.3em;line-height:1.4em}
 .bx{margin:0 5px 10px 5px;background:#f4f4f4}
 .row + .row{margin-top:0}
 
-.bx img{display:block;max-width:100%}
+.bx img{display:block;width:100%}
