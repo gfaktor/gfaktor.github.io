@@ -1,4 +1,7 @@
-/*fix loading roole*/.loading-page{display:none}.page{display:block}
+/*loading page begin*/
+.loading-page{display:none}
+.page{display:block}
+/*loading page end*/
 
 .row:after{content:" ";display:block;height:0;clear:both;visibility:hidden}
 
