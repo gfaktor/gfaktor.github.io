@@ -13,8 +13,18 @@
 		<h1>WallOfLive</h1>
 	</header>
 
-	<div id="wall">
-	</div><!--/wall-->
+	<div id="instafeed">
+	</div><!--/instafeed-->
+
+	<script type="text/javascript" src="src/js/instafeed.min.js"></script>
+	<script type="text/javascript">
+	    var feed = new Instafeed({
+	        get: 'tagged',
+	        tagName: 'rockinroma2014',
+	        clientId: '97ae5f4c024c4a91804f959f43f2635f'
+	    });
+	    feed.run();
+	</script>
 
 </body>
 </html>
