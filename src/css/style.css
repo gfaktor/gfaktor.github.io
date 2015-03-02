@@ -1,7 +1,7 @@
 /*loading page begin*/
 .loading-page{display:block}
 .page{display:none}
-.loading-page{background:#fff url(../img/loading.gif) center center no-repeat}
+.loading-page{top:0;right:0;bottom:0;left:0;background:#fff url(../img/loading.gif) center center no-repeat}
 /*loading page end*/
 
 .bx{margin:0 5px 10px 5px;background:#f4f4f4}
