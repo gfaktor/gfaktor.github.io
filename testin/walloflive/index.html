@@ -17,8 +17,8 @@
 		</header>
 	
 		<div class="row">
-			<div ng-repeat="p in pics | orderBy:orderBy" class="col-md-2">
-				<a href="{{p.link}}" target="_blank"><img ng-src="{{p.images.thumbnail.url}}" class="img-r br-c" title="{{p.caption.text}}"></a>    
+			<div ng-repeat="p in pics | orderBy:orderBy" class="col-xs-2 col-md-1">
+				<a href="{{p.link}}" target="_blank"><img ng-src="{{p.images.thumbnail.url}}" class="img-r" title="{{p.caption.text}}"></a>    
 			</div>
 		</div>
 	
