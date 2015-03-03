@@ -10,8 +10,7 @@
 <body>
 
 	<header>
-		<h1>WallOfLive</h1>
-		<p><a href="#" id="load-more">carica altre</a></p>
+		<p>WallOfLive <a href="#" id="load-more">carica altre</a></p>
 	</header>
 
 	<div class="fc" id="instafeed">
@@ -26,9 +25,6 @@
 	        clientId: '97ae5f4c024c4a91804f959f43f2635f',
 	        limit: 37,
 	        template: '<a class="fl" href="{{link}}"><img src="{{image}}" /></a>',
-	        filter: function(image) {
-				return image.tags.indexOf('selfie') >= 0;
-			},
 	        after: function() {
 				if (!this.hasNext()) {
 					loadButton.setAttribute('disabled', 'disabled');
