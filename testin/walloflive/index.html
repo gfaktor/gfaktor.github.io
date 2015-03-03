@@ -22,10 +22,13 @@
 		var loadButton = document.getElementById('load-more');
 	    var feed = new Instafeed({
 	        get: 'tagged',
-	        tagName: 'rockinroma2014, selfie',
+	        tagName: 'rockinroma2014',
 	        clientId: '97ae5f4c024c4a91804f959f43f2635f',
 	        limit: 37,
 	        template: '<a class="fl" href="{{link}}"><img src="{{image}}" /></a>',
+	        filter: function(image) {
+				return image.tags.indexOf('selfie') >= 0;
+			},
 	        after: function() {
 				if (!this.hasNext()) {
 					loadButton.setAttribute('disabled', 'disabled');
