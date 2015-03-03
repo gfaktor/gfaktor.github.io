@@ -15,20 +15,28 @@
 
 	<div class="fc" id="instafeed">
 	</div><!--/instafeed-->
+	<a id="load-more">carica altre</a>
 
 	<script type="text/javascript" src="src/js/instafeed.min.js"></script>
 	<script type="text/javascript">
+		var loadButton = document.getElementById('load-more');
 	    var feed = new Instafeed({
 	        get: 'tagged',
 	        tagName: 'rockinroma2014',
 	        clientId: '97ae5f4c024c4a91804f959f43f2635f',
 	        limit: 37,
-	        template: '{{model.location.lat}}'
+	        template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+	        after: function() {
+				if (!this.hasNext()) {
+					loadButton.setAttribute('disabled', 'disabled');
+				}
+			}
 	    });
+		loadButton.addEventListener('click', function() {
+		  feed.next();
+		});
 	    feed.run();
 	</script>
 
 </body>
 </html>
-
-
