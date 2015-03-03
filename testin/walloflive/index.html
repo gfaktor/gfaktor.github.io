@@ -15,7 +15,7 @@
 
 	<div class="fc" id="instafeed">
 	</div><!--/instafeed-->
-	<a id="load-more">carica altre</a>
+	<p><a href="#" id="load-more">carica altre</a></p>
 
 	<script type="text/javascript" src="src/js/instafeed.min.js"></script>
 	<script type="text/javascript">
@@ -32,8 +32,9 @@
 				}
 			}
 	    });
-		loadButton.addEventListener('click', function() {
+		loadButton.addEventListener('click', function(){
 		  feed.next();
+		  return false;
 		});
 	    feed.run();
 	</script>
