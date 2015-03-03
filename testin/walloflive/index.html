@@ -46,7 +46,7 @@
             return {
                 fetchPopular: function(callback) {
 
-                    var endPoint = "https://api.instagram.com/v1/tags/rockinroma2014/media/recent?client_id=97ae5f4c024c4a91804f959f43f2635f&callback=JSON_CALLBACK";
+                    var endPoint = "https://api.instagram.com/v1/tags/rockinroma2015/media/recent?client_id=97ae5f4c024c4a91804f959f43f2635f&callback=JSON_CALLBACK";
 
                     $http.jsonp(endPoint).success(function(response) {
                         callback(response.data);
@@ -61,7 +61,7 @@
       $scope.getMore = function() {
         instagram.fetchPopular(function(data) {
             for(var i=0; i<data.length; i++) {
-              if (typeof $scope.have[data[i].id]==="undefined") {
+              if (typeof $scope.have[data[i].id]==="undefined"){
                 $scope.pics.push(data[i]) ;
                 $scope.have[data[i].id] = "1";
               }
