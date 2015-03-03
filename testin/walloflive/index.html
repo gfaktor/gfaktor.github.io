@@ -10,11 +10,11 @@
 </head>
 <body>
 
-	<div class="container" ng-app="myApp" ng-controller="Example">
-	
-		<header>
-			<h1>WallOfLive <button type="button" class="btn btn-success" ng-click="getMore()">You have {{pics.length}} pictures on page - Click to see more pictures?</button></h1>
-		</header>
+	<header>
+		<h1>WallOfLive <button type="button" class="btn btn-success" ng-click="getMore()">You have {{pics.length}} pictures on page - Click to see more pictures?</button></h1>
+	</header>
+
+	<div class="cx" ng-app="myApp" ng-controller="Example">
 	
 		<div class="row">
 			<div ng-repeat="p in pics | orderBy:orderBy" class="col-xs-2 col-md-1">
@@ -70,6 +70,7 @@
       
     });
 	</script>
+	
 	<script src="src/js/roole.min.js"></script>
 
 </body>
