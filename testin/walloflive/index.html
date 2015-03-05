@@ -46,7 +46,8 @@
             return {
                 fetchPopular: function(callback) {
 
-                    var endPoint = "https://api.instagram.com/v1/tags/rockinroma2015/media/recent?access_token=e0fb96ab6c1a4fddbb3d4693019e62cb";
+                    var endPoint = "https://api.instagram.com/v1/tags/rockinroma2015/media/recent?access_token=e0fb96ab6c1a4fddbb3d4693019e62cb&callback=JSON_CALLBACK";
+                    
 
                     $http.jsonp(endPoint).success(function(response) {
                         callback(response.data);
