@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>prova</p>
+	<figure id="mio" style="display:block;width:80%;height:300px"></figure>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="bodymovin.js"></script>
+  <script>
+    var animData = {
+        wrapper: document.getElementById('mio'),
+        animType: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'cuore.json'
+
+    };
+    var anim = bodymovin.loadAnimation(animData);
+    bodymovin.setSubframeRendering(true);
+  </script>
+
+</body>
+</html>
